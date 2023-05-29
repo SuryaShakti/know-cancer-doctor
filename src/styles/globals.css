@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  flex-direction: column;
+  /* width: 100vw; */
+}
+.Background {
+background: linear-gradient(127.91deg, #936CAB -1.59%, #EDCFFF 100%);
+}
+
+input[type="text"]:focus ~ .input-text{
+  @apply text-[#936CAB] transform -translate-y-9 -translate-x-4 scale-75;
+}
