@@ -14,9 +14,13 @@ const OtherInfo = () => {
     setFile(file);
   };
   return (
-    <div className="w-4/5 p-8">
-      <div className="bg-white rounded-md p-10">
-        <div className="font-bold text-gray-800 text-left text-xl py-2">
+    <div className="w-4/5 p-10">
+      <div className="bg-white rounded-md p-3 relative">
+        <img
+          src={"/images/loginround.png"}
+          className="w-28 rounded-md absolute -top-14 left-1/2 -translate-x-1/2 "
+        />
+        <div className="font-bold text-gray-800 text-left text-xl py-1">
           SignUp
         </div>
         <div className=" grid md:grid-cols-2">
@@ -112,7 +116,7 @@ const OtherInfo = () => {
           </div>
         </div>
         <div className="text-[#936CAB] pt-2">Upload Document</div>
-        <div className="App w-1/2 py-5">
+        <div className="App w-1/2 py-4">
           <FileUploader
             multiple={true}
             style={{ display: "block" }}

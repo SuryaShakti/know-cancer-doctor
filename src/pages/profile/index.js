@@ -37,10 +37,12 @@ const Profile = () => {
             />
           </div>
           <div
-            className="flex font-normal text-sm w-full bg-[#936CAB]"
+            className="flex font-normal text-sm w-full bg-[#936CAB] mr-2"
             onClick={() => setOpen(true)}
           >
-            <button>+ Add New Q&A</button>
+            <button className="whitespace-nowrap px-3 py-1 text-sm text-white font-semibold">
+              + Add New Q&A
+            </button>
           </div>{" "}
           <div className="flex justify-end w-full">
             <svg
@@ -61,28 +63,28 @@ const Profile = () => {
         </div>
         <AddQADialog open={open} setOpen={setOpen} />
       </div>
+      {/* ------------------------------------------------------------------------------------------ */}
       <div className="p-5">
         <div className=" grid md:grid-cols-4 ">
-          <div className="mt-2 rounded-md shadow-sm ">
-            <label className="relative">
-              {" "}
-              <input
-                type="text"
-                name="price"
-                id="price"
-                className="w-full rounded-md border-2 py-1.5 px-3 text-gray-900 border-opacity-50 outline-none border-[#936CAB] focus:border-[#936CAB] placeholder:text-gray-400 transition duration-200"
-              />
-              <span className="text-[#936CAB] text-opacity-80 absolute left-0 top-0 mx-2 px-2 transition duration-200 input-text">
-                Name
-              </span>
-            </label>
+          <div>
+            <div className="text-[#936CAB] ">Name</div>
+            <div className="my-1">
+              <div className="relative mt-1 rounded-md shadow-sm ">
+                <input
+                  type="text"
+                  name="price"
+                  id="price"
+                  className="block w-full rounded-md border-0 py-1.5 pl-2  text-gray-900 ring-1 ring-inset ring-[#936CAB] placeholder:text-gray-400 sm:text-sm sm:leading-6"
+                />
+              </div>
+            </div>
           </div>
         </div>
         <div className=" grid md:grid-cols-4 ">
           <div>
             <div className="text-[#936CAB] ">Phone Number</div>
-            <div className="my-2">
-              <div className="relative mt-2 rounded-md shadow-sm ">
+            <div className="my-1">
+              <div className="relative mt-1 rounded-md shadow-sm ">
                 <input
                   type="text"
                   name="price"
@@ -96,8 +98,8 @@ const Profile = () => {
         <div className=" grid md:grid-cols-2 ">
           <div>
             <div className="text-[#936CAB] ">E-mail</div>
-            <div className="my-2">
-              <div className="relative mt-2 rounded-md shadow-sm ">
+            <div className="my-1">
+              <div className="relative mt-1 rounded-md shadow-sm ">
                 <input
                   type="text"
                   name="price"
@@ -111,8 +113,8 @@ const Profile = () => {
         <div className=" grid md:grid-cols-2 ">
           <div>
             <div className="text-[#936CAB] ">Address</div>
-            <div className="my-2">
-              <div className="relative mt-2 rounded-md shadow-sm ">
+            <div className="my-1">
+              <div className="relative mt-1 rounded-md shadow-sm ">
                 <input
                   type="text"
                   name="price"
@@ -126,8 +128,8 @@ const Profile = () => {
         <div className=" grid md:grid-cols-4 ">
           <div>
             <div className="text-[#936CAB] ">City</div>
-            <div className="my-2">
-              <div className="relative mt-2 rounded-md shadow-sm p-2">
+            <div className="my-1">
+              <div className="relative mt-1 rounded-md shadow-sm p-2">
                 <select
                   type="text"
                   name="price"
@@ -139,8 +141,8 @@ const Profile = () => {
           </div>{" "}
           <div>
             <div className="text-[#936CAB] ">Country</div>
-            <div className="my-2">
-              <div className="relative mt-2 rounded-md shadow-sm p-2 ">
+            <div className="my-1">
+              <div className="relative mt-1 rounded-md shadow-sm p-2 ">
                 <div className="absolute p-2 inset-y-0 left-1 flex items-center pointer-events-none">
                   <SearchIcon
                     className="h-5 w-5 text-[#936CAB] font-light"
@@ -158,8 +160,8 @@ const Profile = () => {
           </div>{" "}
           <div>
             <div className="text-[#936CAB] ">Postal Code</div>
-            <div className="my-2">
-              <div className="relative mt-2 rounded-md shadow-sm p-2">
+            <div className="my-1">
+              <div className="relative mt-1 rounded-md shadow-sm p-2">
                 <div className="absolute p-2 inset-y-0 left-1 flex items-center pointer-events-none">
                   <SearchIcon
                     className="h-5 w-5 text-[#936CAB] font-light"
@@ -179,8 +181,8 @@ const Profile = () => {
         <div className=" grid md:grid-cols-4 ">
           <div>
             <div className="text-[#936CAB] ">License Country</div>
-            <div className="my-2">
-              <div className="relative mt-2 rounded-md shadow-sm p-2">
+            <div className="my-1">
+              <div className="relative mt-1 rounded-md shadow-sm p-2">
                 <input
                   type="text"
                   name="price"
@@ -192,8 +194,8 @@ const Profile = () => {
           </div>{" "}
           <div>
             <div className="text-[#936CAB] ">License of</div>
-            <div className="my-2">
-              <div className="relative mt-2 rounded-md shadow-sm p-2 ">
+            <div className="my-1">
+              <div className="relative mt-1 rounded-md shadow-sm p-2 ">
                 <input
                   type="text"
                   name="price"
@@ -205,8 +207,8 @@ const Profile = () => {
           </div>{" "}
           <div>
             <div className="text-[#936CAB] ">License Number</div>
-            <div className="my-2">
-              <div className="relative mt-2 rounded-md shadow-sm p-2 ">
+            <div className="my-1">
+              <div className="relative mt-1 rounded-md shadow-sm p-2 ">
                 <input
                   type="text"
                   name="price"
@@ -218,8 +220,8 @@ const Profile = () => {
           </div>
           <div>
             <div className="text-[#936CAB] ">NPI Number</div>
-            <div className="my-2">
-              <div className="relative mt-2 rounded-md shadow-sm p-2 ">
+            <div className="my-1">
+              <div className="relative mt-1 rounded-md shadow-sm p-2 ">
                 <input
                   type="text"
                   name="price"
@@ -229,20 +231,20 @@ const Profile = () => {
               </div>
             </div>
           </div>
-          <div>
-            <p className="py-2 text-[#936CAB] ">Upload Documentation</p>
-            <FileUploader
-              multiple={true}
-              style={{ display: "block", border: "solid" }}
-              handleChange={handleChange}
-              name="file"
-              // types={fileTypes}
-            />
-            <p>{file ? `File name: ${file[0].name}` : ""}</p>
-          </div>
-          <div className="py-2 text-[#936CAB]">
-            <p>Generate Code For Patients for Chatbot</p>
-          </div>
+        </div>
+        <div>
+          <p className="py-2 text-[#936CAB] ">Upload Documentation</p>
+          <FileUploader
+            multiple={true}
+            style={{ display: "block", border: "solid" }}
+            handleChange={handleChange}
+            name="file"
+            // types={fileTypes}
+          />
+          <p>{file ? `File name: ${file[0].name}` : ""}</p>
+        </div>
+        <div className="py-2 text-[#936CAB]">
+          <p>Generate Code For Patients for Chatbot</p>
         </div>
       </div>
     </div>

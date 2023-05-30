@@ -10,8 +10,12 @@ const LoginForm = () => {
     <div>
       {/* <img src={"/images/loginround.png"} className="w-28 rounded-md absolute m" /> */}
 
-      <div className="bg-white p-5 py-10 rounded-md ">
-        <div className="text-gray-500 pt-10">E-mail or phone number</div>
+      <div className="bg-white p-5 py-3 rounded-md relative">
+        <img
+          src={"/images/loginround.png"}
+          className="w-28 rounded-md absolute -top-14 left-1/2 -translate-x-1/2 "
+        />
+        <div className="text-gray-500 pt-14">E-mail or phone number</div>
         <div className="my-2">
           <div className="relative mt-2 rounded-md shadow-sm">
             <input

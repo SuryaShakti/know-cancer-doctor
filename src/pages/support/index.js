@@ -100,10 +100,12 @@ const Support = () => {
             />
           </div>
           <div
-            className="flex font-normal text-sm w-full bg-[#936CAB]"
+            className="flex font-normal text-sm w-full bg-[#936CAB] mr-2"
             onClick={() => setOpen(true)}
           >
-            <button>+ Add New Q&A</button>
+            <button className="whitespace-nowrap px-3 py-1 text-sm text-white font-semibold">
+              + Add New Q&A
+            </button>
           </div>{" "}
           <div className="flex justify-end w-full">
             <svg
