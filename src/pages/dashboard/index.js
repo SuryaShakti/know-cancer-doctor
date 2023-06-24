@@ -23,7 +23,7 @@ const Dashboard = () => {
       <div className="flex justify-between items-center">
         <div className="justify-start font-bold text-[#374151] ">Dashboard</div>
 
-        <div className="flex border rounded-full px-5 mx-8 w-full">
+        <div className="hidden md:flex border rounded-full px-5 mx-8 w-full">
           <div className="inset-y-0 left-1 flex items-center pointer-events-none">
             <SearchIcon
               className="h-5 w-5 text-black font-light"
@@ -55,6 +55,21 @@ const Dashboard = () => {
           </svg>
         </div>
       </div>
+      <div className="md:hidden flex border rounded-full pl-5 mt-2  w-full">
+        <div className="inset-y-0 left-1 flex items-center pointer-events-none">
+          <SearchIcon
+            className="h-5 w-5 text-black font-light"
+            aria-hidden="true"
+          />
+        </div>
+        <input
+          id="search-field"
+          className="w-full pr-2 h-full rounded-full pl-5 py-2 bg-gray border-black text-gray-900 placeholder-[#999999] focus:outline-none focus:placeholder-gray-300 focus:ring-0 focus:border-transparent"
+          placeholder="Search patient, code, messages...."
+          type="search"
+          name="search"
+        />
+      </div>
       {/* //---------------------------------------------------------------------------------- */}
       <div className="grid lg:grid-cols-10 gap-5 py-10">
         <div className="lg:col-span-7">
@@ -71,12 +86,12 @@ const Dashboard = () => {
           </div>
         </div>
         <div className="lg:col-span-3">
-          <div className="shadow py-5 px-3 rounded-lg shadow-[4px_4px_4px_2px_#936CAB]">
+          <div className="shadow py-1 px-3 rounded-lg shadow-[4px_4px_4px_2px_#936CAB]">
             <div className="font-bold text-lg">Q&A</div>
-            <div className="h-7 py-3 text-[#E61323] text-lg font-['Poppins']">
+            <div className="h-7 py-2 text-[#E61323] text-lg font-['Poppins']">
               Question- {question.question}
             </div>
-            <div className="font-normal text-sm font-['Poppins'] py-3">
+            <div className="font-normal text-sm font-['Poppins'] py-8">
               {question.answer.slice(0, 110)}{" "}
               <button className="text-[#936CAB]" onClick={() => setOpen2(true)}>
                 ....Read It
@@ -93,7 +108,7 @@ const Dashboard = () => {
                 </button>
               </div>
             </div>{" "}
-            <div></div>
+           
           </div>
         </div>
       </div>
