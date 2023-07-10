@@ -7,7 +7,7 @@ const RequestSentForm = () => {
       <div className="mt-2">
         <img
           src={"/images/Check 1.png"}
-          className="w-14 rounded-md py-8"
+          className="w-16 rounded-md ml-32"
         />
         <div
           as="h3"
